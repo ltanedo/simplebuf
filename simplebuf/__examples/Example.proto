@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+message Option_Chains {
+	repeated Option Example = 1;
+}
+
+message Option { 
+	string putCall = 1;
+	int64 quoteTimeInLong = 2;
+	string exchangeName = 3;
+	string symbol = 4;
+	string underlying = 5;
+	double bidPrice = 6;
+	double askPrice = 7;
+	int64 bidSize = 8;
+	int64 askSize = 9;
+	double volatility = 10;
+	double delta = 11;
+	double gamma = 12;
+	double theta = 13;
+	double vega = 14;
+	double rho = 15;
+	int64 openInterest = 16;
+	int64 totalVolume = 17;
+	string expirationDate = 18;
+	int64 daysToExpiration = 19;
+	double strikePrice = 20;
+	double underlyingPrice = 21;
+	double percentInTheMoney = 22;
+}

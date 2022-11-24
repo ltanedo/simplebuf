@@ -1,0 +1,3 @@
+import simplebuf
+
+simplebuf.install()
